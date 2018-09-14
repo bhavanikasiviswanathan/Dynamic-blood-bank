@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+   <head>
+      <title>Signup</title>
+   </head>
+   
+   <body>
+      <form action="" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+
+      <div class = 'container'>
+   
+	<h2 align = center>Signup</h2>
+	 <table cellspacing="2" cellpadding="2" border="0" align="center">
+            <tr/>
+            <tr/>
+			<tr>
+               <td align="right"><font size = +2>Username</font></td>
+               <td><input type="text" name="username" /></td>
+            </tr>
+            
+			<tr/>
+			
+            <tr>
+               <td align="right"><font size = +2>E-mail id</font></td>
+               <td><input type="text" name="email" /></td>
+            </tr>
+            
+			<tr/>
+			
+            <tr>
+               <td align="right"><font size = +2>Password</font></td>
+               <td><input type="password" name="password" /></td>
+            </tr>
+            
+			<tr/>
+			<tr/>
+			
+			<tr>
+               <td align="right"><font size = +2>Confirm Password</font></td>
+               <td><input type="password" name="confirm_password" /></td>
+            </tr>
+			
+            <tr/>
+			<tr/>
+			
+            <tr>
+               <td align="right"></td>
+               <td>&nbsp;&nbsp;<input type="button" value="Submit" onclick="location.href=/login/"/></td>
+            </tr>
+            
+     </table>    
+     </div>
+     </form>  
+   </body>
+{% endblock %}

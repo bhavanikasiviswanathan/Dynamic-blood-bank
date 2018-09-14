@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+  <head>
+      <title>Details</title>
+   </head>
+   
+   <div class = 'container'>
+	<h2 align = center>Personal details</h2>
+	 <table cellspacing="2" cellpadding="2" border="0" align="center">
+            <tr/>
+            <tr/>
+			<tr>
+               <td align="right"><font size = +2>Blood Group</font></td>
+               <td><input type="text" name="bloodgroup" /></td>
+            </tr>
+            
+			<tr/>
+			<tr/>
+			
+            <tr>
+               <td align="right"><font size = +2>Date Of Birth</font></td>
+               <td><input type="date" name="dob" /></td>
+            </tr>
+            
+			<tr/>
+			<tr/>
+			
+            <tr>
+               <td align="right"><font size = +2>Gender</font></td>
+               <td><input type="radio" name="gender"  value="Male"><font size = +2>Male</font></input>		<br/> 
+			       <input type="radio" name="gender"  value="Female"><font size = +2>Female</font></input>	<br/>
+				   <input type="radio" name="gender"  value="Others"><font size = +2>Others</font></input> 
+			   <td/>
+       			
+			</tr>
+			
+			<tr/>
+			<tr/>
+			
+			<tr>
+				<td align="right"><font size = +2>Contact</font></td>
+				<td><input type="text" name = "contact" /></td>
+			</tr>	
+
+            <tr/>
+			<tr/>
+			
+			<tr>
+				<td align="right"><font size = +2>Emergency Contact</font></td>
+				<td><input type="text" name = "emergency_contact" /></td>
+			</tr>
+			
+			<tr/>
+			<tr/>
+			
+			<tr>
+				<td align="right"><font size = +2>Address</font></td>
+				<td><textarea name = "address"></textarea></td>
+			</tr>
+			
+			<tr/>
+			<tr/>
+			
+			<tr>
+				<td align="right"><font size = +2>City</font></td>
+				<td><input type="text" name = "city" /></td>
+			</tr>
+			
+			<tr/>
+			<tr/>
+			
+			
+            <tr>
+               <td align="right"></td>
+               <td>&nbsp;&nbsp;<input type="button" value="Submit" /></td>
+            </tr>
+            
+     </table>      
+</div>
+</html>
+
+{% endblock %}

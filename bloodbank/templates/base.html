@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood bank</title>
+	{% include 'snippets/css.html' %}
+</head>
+<body>
+<div class = 'container'>
+			{% include 'snippets/nav.html' %}
+		<h2> Dynamic blood bank </h2>
+		{% block content %} {% endblock content %}
+	
+{% include 'snippets/js.html' %}
+</div>
+</body>
+</html>
